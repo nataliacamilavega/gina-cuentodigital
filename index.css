@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #457e17;
+    
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+.hero {
+    height: 100%;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    
+    position: relative;
+
+    z-index: 9999;
+    
+}
+
+
+video {
+    position: absolute;
+
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    
+    display: flex;
+    flex-direction: column;
+
+    font-size: clamp(52px, 7vw, 100px);
+
+    gap: 100px;
+
+    color: rgb(251 94 227);
+
+    text-align: center;
+}
+
+h1 > span {
+    font-size: clamp(32px, 3vw, 48px);
+        color: white;
+}
+
+.hero-title {
+    padding: 10px 50px;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    flex: 1 1 275px;
+
+    background-color: rgba(0, 0, 0, 0.315);
+    backdrop-filter: blur(5px);
+
+
+    gap: 50px;
+}
+
+.hero-title > a {
+    color: white;
+    background-color: rgb(251 94 227);
+    border-radius: 7px;
+
+    text-decoration: none;
+    width: 90%;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: clamp(12px, 2vw, 32px);
+
+    padding: 7px;
+}
+
+.hero-title a:hover, .hero-title a:active {
+    box-shadow: 2px 2px 16px #ffffff;
+}
+
+.hero-image {
+    width: 70%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+
+    padding: 0 40px;
+
+    flex: 1 1 650px;
+    height: auto;
+}
+
+.hero-image > img {
+    width: 90%;
+    
+    object-fit: contain;
+
+
+
+    border-radius: 20px;
+
+    filter: drop-shadow(30px 20px 4px rgba(0, 0, 0, 0.74));
+}
+
+@media (max-width: 700px) {
+    
+    .hero-title {
+        order: 2;
+        gap: 16px;
+        width: 100%;
+        height: 30%;
+        justify-content: flex-start;
+
+    }
+    .hero-title h1 {
+        gap: 3px;
+        justify-content: flex-start;
+        
+        line-height: 64px;
+    }
+
+    h1 span {
+        font-size: clamp(16px, 3vw, 48px);
+        line-height: 24px;
+    }
+    .hero-image {
+        width: 100%;
+        height: 70%;
+        padding: 0 40px 24px 40px;
+    }
+    .hero-image img {
+        width: 110%;
+    }
+
+    
+  
+}
