@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+ 
+/*   
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
+
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+
+    z-index: 9999;
+
+    background-image: url(assets/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+nav {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 16px;
+
+
+}
+
+nav a i{
+    font-size: clamp(16px, 2vw, 32px);
+}
+nav a {
+    font-size: clamp(16px, 2vw, 32px);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    gap: 16px;
+
+    color: rgb(90, 5, 90);
+
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+nav a:hover {
+    color: rgb(251 94 227);
+    transition: all 0.5s ease;
+}
+
+
+
+body {
+    height: 110vh; 
+    
+    background-image: url(assets/.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+} 
+
+main {
+
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 60px 100px;
+    gap: 20px;
+    
+    align-items: center;
+
+    padding-top: 100px;
+
+    
+
+
+}
+
+main h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: clamp(20px, 3vw, 32px);
+    color: rgb(251 94 227);
+}
+.parrafo {
+    display: flex;
+
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+
+
+    text-align: center;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: clamp(16px, 2vw, 24px);
+
+    flex-wrap: wrap;
+
+}
+
+.parrafo p {
+    flex: 1 1 300px;
+    text-align: justify;
+
+}
+.parrafo img {
+    width: 15%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 100px;
+
+
+    flex: 0 1 250px;
+}
+
+.segundo {
+    flex-direction: row;
+    
+}
+
+.video {
+    flex-direction: column;
+    
+    padding: 32px 0;
+
+    display: flex;
+
+
+    align-items: center;
+
+    gap: 14px;
+
+
+    text-align: center;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: clamp(16px, 2vw, 24px);
+
+    height: auto;
+
+}
+
+.video video {
+    
+    width: 90%;
+    height: 80%;
+    border-radius: 20px;
+
+
+    box-shadow: 0px 0px 10px rgb(251 94 227);
+
+    object-fit: cover;
+
+}
+
+.boton-outlined {
+    
+    color: white;
+    background-color: rgb(90, 5, 90);
+    border: 3px solid rgb(90, 5, 90);
+    border-radius: 7px;
+    text-decoration: none;
+    width: 50%;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: clamp(16px, 2vw, 32px);
+
+    padding: 7px;
+
+    box-shadow: 1px 1px 16px #00000086;
+    transition: all 0.5s ease;
+}
+
+.boton-outlined:hover, .boton-outlined:active {
+    background-color: rgba(90, 5, 90, 0);
+    box-shadow: 2px 2px 16px #000000;
+    color: rgb(251 94 227);
+    border: 3px solid rgb(251 94 227);
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 36px;
+        padding-top: 100px;
+    }
+    .video .abuela {
+        
+        height: 30%;
+    }
+}
