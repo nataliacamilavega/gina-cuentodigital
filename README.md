@@ -1,5 +1,5 @@
 ## GINA - Una perrita muy dulce y tierna - cuento digital
-- **Last update:** 7 de agosto de 2022.
+- **Last update:** 7 de agosto de 2022
 - **Link del proyecto:** [Gina - Cuento digital](https://gina-unaperritamuydulce.vercel.app/)
 
 ### Descripcion
